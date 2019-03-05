@@ -1,0 +1,83 @@
+html, body,  #root, .App {
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.App-menu ul {
+  list-style-type: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.App-menu ul li {
+  text-align: right;
+}
+
+.menu-1 {
+  margin-right: 5px;
+}
+.menu-2 {
+  margin-right: 10px;
+}
+.menu-3 {
+  margin-right: 15px;
+}
+.menu-4 {
+  margin-right: 22px;
+}
+.menu-5 {
+  margin-right: 24px;
+}
+
+.App-section-a {
+  height: 100%;
+}
+
+.App-section-b {
+  height: 100%;
+}
+
+.App-section-c {
+  height: 300px;
+}
+
+.App-section-d {
+  height: 300px;
+}
+
+.App-footer {
+  height:200px;
+}
+
+.App-header, .App-section-a, .App-footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  color: white;
+
+}
+
+.js-color-stop {
+  height: 1200px;;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
