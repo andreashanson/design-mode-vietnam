@@ -1,60 +1,29 @@
 import React, { Component } from 'react';
-import { AnimatedBg, Transition } from 'scroll-background';
 import './App.css';
 
 class App extends Component {
   render() {
-    const ScrollContent = () => (
-      <AnimatedBg>
-        <div style={{ height: '1200px' }}>
-          <header className="App-header">
-            <div className="App-logo">Logo</div>
-            <div className="App-menu">
-              <ul>
-                <li className="menu-1">BOUTIQUE</li>
-                <li className="menu-2">STORY</li>
-                <li className="menu-3">COMMUNITY</li>
-                <li className="menu-4">REACH US</li>
-                <li className="menu-5">SHIP + RETURN</li>
-              </ul>
-            </div>
-          </header>
-        </div>
-        
-        <Transition height="1200px" from="#E4BF18" to="#1825E4">
-          <h1>Content that appears within the transition</h1>
-        </Transition>
-
-        <div style={{ height: '1200px' }} />
-        <Transition height="1200px" from="#1825E4" to="#E48A18" position={0.75}>
-          <h1>Content that appears within the transition</h1>
-        </Transition>
-
-        <div style={{ height: '1200px' }} />
-        <Transition height="1200px" from="#E48A18" to="#EADDA8" position={0.75}>
-          <h1>Content that appears within the transition</h1>
-        </Transition>
-
-        <div style={{ height: '1200px' }} />
-        <Transition height="1200px" from="#EADDA8" to="#D9A8EA" position={0.75}>
-          <h1>Content that appears within the transition</h1>
-        </Transition>
-
-        <div style={{ height: '1200px' }} />
-        <Transition height="1200px" from="#D9A8EA" to="#FFFFFF" position={0.75}>
-          <h1>Content that appears within the transition</h1>
-        </Transition>
-
-        <div style={{ height: '1200px' }} />
-        <Transition height="1200px" from="#FFFFFF" to="#FFFFFF" position={0.75}>
-          <h1>Content that appears within the transition</h1>
-        </Transition>
-
-      </AnimatedBg>
-    )
     return (
       <div className="App">
-        <ScrollContent />
+        <header className="App-header">
+          <div className="App-logo">Logo</div>
+          <div className="App-menu">
+            <ul>
+              <li className="menu-1"><a href="#section-1">BOUTIQUE</a></li>
+              <li className="menu-2"><a href="#section-2">STORY</a></li>
+              <li className="menu-3"><a href="#section-3">COMMUNITY</a></li>
+              <li className="menu-4"><a href="#section-4">REACH US</a></li>
+              <li className="menu-5"><a href="#section-5">SHIP + RETURN</a></li>
+            </ul>
+          </div>
+          </header>
+          <div className="scroll-content">
+            <section id="section-1" className="main-section">BOUTIQUE</section>
+            <section id="section-2" className="main-section">STORY</section>
+            <section id="section-3" className="main-section">COMMUNITY</section>
+            <section id="section-4" className="main-section">REACH US</section>
+            <section id="section-5" className="main-section">SHIP + RETURN</section>
+          </div>
       </div>
     );
   }

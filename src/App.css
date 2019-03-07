@@ -8,6 +8,10 @@ html, body,  #root, .App {
 }
 
 .App-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
   height: 200px;
   display: flex;
   flex-direction: row;
@@ -23,6 +27,11 @@ html, body,  #root, .App {
 
 .App-menu ul li {
   text-align: right;
+}
+
+a:active, a:hover, a:link, a:visited {
+  color: white;
+  text-decoration: none;
 }
 
 .menu-1 {
@@ -41,27 +50,15 @@ html, body,  #root, .App {
   margin-right: 24px;
 }
 
-.App-section-a {
-  height: 100%;
-}
-
-.App-section-b {
-  height: 100%;
-}
-
-.App-section-c {
-  height: 300px;
-}
-
-.App-section-d {
-  height: 300px;
+.main-section {
+  padding-top: 200px;
 }
 
 .App-footer {
   height:200px;
 }
 
-.App-header, .App-section-a, .App-footer {
+.App-header, .App-footer {
   display: flex;
   flex-direction: row;
   width: 100%;
