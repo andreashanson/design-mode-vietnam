@@ -54,6 +54,13 @@ a:active, a:hover, a:link, a:visited {
   padding-top: 200px;
 }
 
+.botique-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
 .App-footer {
   height:200px;
 }

@@ -18,7 +18,12 @@ class App extends Component {
           </div>
           </header>
           <div className="scroll-content">
-            <section id="section-1" className="main-section">BOUTIQUE</section>
+            <section id="section-1" className="main-section">
+            <h1>BOUTIQUE</h1>
+            <div className="botique-section">
+              <div>Picture 1</div><div>Picture 2</div><div>Picture 3</div>
+            </div>
+            </section>
             <section id="section-2" className="main-section">STORY</section>
             <section id="section-3" className="main-section">COMMUNITY</section>
             <section id="section-4" className="main-section">REACH US</section>
