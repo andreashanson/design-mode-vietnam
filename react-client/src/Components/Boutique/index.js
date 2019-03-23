@@ -6,10 +6,10 @@ import Photo17 from '../../images/Photo_17.jpg';
 import BlackLogo from '../../images/logo/black.png';
 import WhiteLogo from '../../images/logo/white.png';
 
-const Boutique = () => (
+const Boutique = (props) => (
     <section id="section-1" className="main-section">
-        <h1>BOUTIQUE</h1>
-        <div className="botique-section">
+        <h1 className="boutique-header">{props.header}</h1>
+        <div className="boutique-section">
             <div><img src={Photo7}/></div>
             <div><img src={Photo}/></div>
             <div>

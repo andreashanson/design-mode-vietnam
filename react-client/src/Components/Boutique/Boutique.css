@@ -1,5 +1,5 @@
 
-.botique-section {
+.boutique-section {
     padding-left: 30px;
     padding-right: 30px;
     display: flex;
@@ -9,12 +9,12 @@
 }
 
 @media screen and (max-width: 768px) {
-    .botique-section {
+    .boutique-section {
         flex-direction: column;
     }
 }
 
-.botique-section div {
+.boutique-section div {
     width: 100%;
     padding: 10px;
 }
@@ -23,7 +23,12 @@ img {
     width: 100%;
 }
 
-.logo {
+h1.boutique-header {
+    color: #2C5234;
+    color: rgba(44, 82, 52, 1);    
+}
+
+.boutique-section .logo {
     position: relative;
     bottom: 170px;
     right: -20px;

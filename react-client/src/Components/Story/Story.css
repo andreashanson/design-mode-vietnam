@@ -1,0 +1,23 @@
+.story-section {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.story-section .text {
+    width: 60%;
+}
+
+.story-section .logo {
+    width: 35%;
+}
+
+h1.story-header {
+    color: #2e0afa;
+}
+
+.story-section .text {
+    color: #693C5E;
+    color: rgba(105, 60, 94, 1);
+}
