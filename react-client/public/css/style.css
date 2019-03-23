@@ -1,20 +1,58 @@
-body {
-    background: green;
-    transition: 0.5s all;
+body, .bg-pantone-115-c {
+    background: #FDDA24;
+    transition: 0.7s all;
 }
 
-.red {
-    background: red;
+.bg-pantone-115-c {
+    background: #FDDA24;
+    background: rgba(253, 218, 36, 1);
 }
 
-.yellow {
-    background: yellow;
+.font-pantone-115-c-main {
+    color: #FDDA24;
+    color: rgba(253, 218, 36, 1);
 }
 
-.blue {
-    background: blue;
+.bg-pantone-2010-c {
+    background: #FFAD00;
+    background: rgba(255, 173, 0, 1);
 }
 
-.purple {
-    background: purple;
+.bg-pantone-9225-u {
+    background: #F6E5D3;
+    background: rgba(246, 229, 211, 1);
 }
+
+.bg-pantone-531-u {
+    background: #E4C7EB;
+    background: rgba(228, 199, 235, 1);
+}
+
+.plain-white {
+    background: #FFFFFF;
+}
+
+.afa-blue {
+    background: #2e0afa;
+}
+
+.font-pantone-350-c {
+    color: #2C5234;
+    color: rgba(44, 82, 52, 1);
+}
+
+.font-pantone-635-c {
+    color: #A4DBE8;
+    color: rgba(164, 219, 232, 1);
+}
+
+.font-pantone-5125-c {
+    color: #693C5E;
+    color: rgba(105, 60, 94, 1);
+}
+
+.font-pantone-2465-c {
+    color: #1D6E2F;
+    color: rgba(29, 110, 47, 1);
+}
+

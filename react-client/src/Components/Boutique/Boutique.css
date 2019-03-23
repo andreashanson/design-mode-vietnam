@@ -1,0 +1,24 @@
+
+.botique-section {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .botique-section {
+        flex-direction: column;
+    }
+}
+
+.botique-section div {
+    width: 100%;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+}

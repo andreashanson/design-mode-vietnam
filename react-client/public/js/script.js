@@ -10,29 +10,32 @@ $(document).ready(function() {
         console.log(windowHeight*2);
 
         if ($(this).scrollTop() >= (windowHeight+200)) {
-            $("body").addClass("red")
+            $("body").addClass("bg-pantone-2010-c");
         }
         else if ($(this).scrollTop() <= (windowHeight+200)) {
-            $("body").removeClass("red");
+            $("body").removeClass("bg-pantone-2010-c");
         }
         if ($(this).scrollTop() >= (windowHeight*2)+200*2 ) {
-            $("body").addClass("yellow").removeClass("red");
+            $("body").addClass("bg-pantone-531-u").removeClass("bg-pantone-2010-c");
         }
         else if ($(this).scrollTop() <= (windowHeight*2) + 200*2) {
-            $("body").removeClass("yellow");
+            $("body").removeClass("bg-pantone-531-u");
         }
 
         if ($(this).scrollTop() >= (windowHeight*3)+200*3 ) {
-            $("body").addClass("blue").removeClass("yellow");
+            $("body").addClass("plain-white").removeClass("bg-pantone-531-u");
+            $(".App-menu").addClass("font-pantone-115-c").removeClass("default");
         }
         else if ($(this).scrollTop() <= (windowHeight * 3) + 200*3) {
-            $("body").removeClass("blue");
+            $("body").removeClass("plain-white");
+            $(".App-menu").addClass("default").removeClass("font-pantone-115-c");
         }
         if ($(this).scrollTop() >= (windowHeight * 4) + 200 * 4) {
-            $("body").addClass("purple").removeClass("blue");
+            $("body").addClass("afa-blue").removeClass("plain-white");
+            $(".App-menu").addClass("default").removeClass("font-pantone-115-c");
         }
         else if ($(this).scrollTop() <= (windowHeight * 4) + 200 * 4) {
-            $("body").removeClass("purple");
+            $("body").removeClass("afa-blue");
         }
     });
 });

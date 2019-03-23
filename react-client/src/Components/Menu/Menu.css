@@ -1,0 +1,40 @@
+
+.App-menu ul {
+  list-style-type: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.App-menu ul li {
+    text-align: right;
+    color: #FFFFFF;
+}
+
+
+.App-header .App-menu.font-pantone-115-c ul li a:active, a:hover, a:link, a:visited {
+    color: #FDDA24;
+    text-decoration: none;
+}
+
+
+.App-header .App-menu.default ul li a:link, a:hover, a:visited, a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+.menu-1 {
+  margin-right: 5px;
+}
+.menu-2 {
+  margin-right: 10px;
+}
+.menu-3 {
+  margin-right: 15px;
+}
+.menu-4 {
+  margin-right: 22px;
+}
+.menu-5 {
+  margin-right: 24px;
+}
