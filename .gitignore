@@ -9,7 +9,8 @@
 /coverage
 
 # production
-/build
+react-client/build
+react-client/node_modules
 
 # misc
 .DS_Store
@@ -21,3 +22,5 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+docs
