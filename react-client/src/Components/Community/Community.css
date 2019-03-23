@@ -1,18 +1,20 @@
 #section-3 {
-    
+    position: relative;
+    color:white;
 }
 
 h1.community-header {
     color: #1D6E2F;
     color: rgba(29, 110, 47, 1);
+    position: relative;
+    top: 100px;
+    left: 0px;
 }
 
 .community-image {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
-    top: 0px;
     display: block;
 }
 
