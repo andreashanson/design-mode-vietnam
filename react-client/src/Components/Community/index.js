@@ -5,7 +5,7 @@ import Image from '../../images/Photo.jpg';
 const Community = (props) => (
     <section id="section-3" className="main-section">
         <h1 className="community-header">{props.header}</h1>
-        <img className="community-image" src={Image} />
+        <img className="community-image" src={Image} alt="Community" />
     </section>
 )
 export default Community;

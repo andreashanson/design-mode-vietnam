@@ -8,18 +8,6 @@ html, body,  #root, .App {
   flex-direction: column;
 }
 
-.App-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  height: 200px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
 .main-section h1 {
   margin-left: 60px;
   font-size: 8vw;
@@ -28,19 +16,6 @@ html, body,  #root, .App {
 
 .main-section {
   padding-top: 200px;
-}
-
-
-.App-footer {
-  height:200px;
-}
-
-.App-header, .App-footer {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  color: white;
-
 }
 
 .js-color-stop {

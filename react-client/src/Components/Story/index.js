@@ -9,7 +9,7 @@ const Story = (props) => (
             <section className="text">
                 <p>ksajddfkjs</p>
             </section>
-            <section className="logo"><img src={WhiteLogo} /></section>
+            <section className="logo"><img src={WhiteLogo} alt="Logo" /></section>
         </section>
     </section>)
 export default Story;

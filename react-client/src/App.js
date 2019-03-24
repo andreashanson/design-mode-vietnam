@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
 import './Fonts/fonts.css';
 import './App.css';
-import Menu from './Components/Menu';
+import Header from './Components/Header';
 import Boutique from './Components/Boutique';
 import Story from './Components/Story';
 import Community from './Components/Community';
+
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header id="App-header" className="App-header">
-          <div className="App-logo">Logo</div>
-          <Menu />
-        </header>
+        <Header />
         <div className="scroll-content">
           <Boutique header ="boutique" />
           <Story header="story" />

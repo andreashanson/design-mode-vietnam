@@ -18,30 +18,31 @@ $(document).ready(function() {
         shipReturnHeight = $("#section-5").height();
         
         // Scrollled to Boutique
-        if ($(this).scrollTop() < (boutiqueHeight + headerHeight)) {
+        if ($(this).scrollTop() <= (boutiqueHeight + headerHeight)) {
             console.log("Boutique");
             $("body").removeClass();
         }
         // Scrolled to Story
-        if ($(this).scrollTop() > (boutiqueHeight+headerHeight) && $(this).scrollTop() < (boutiqueHeight+storyHeight)+(headerHeight*2) ) {
+        if ($(this).scrollTop() >= (boutiqueHeight+headerHeight) && $(this).scrollTop() <= (boutiqueHeight+storyHeight)+(headerHeight*2) ) {
             console.log("Story");
             $("body").removeClass().addClass("bg-pantone-2010-c");
         }
         
         // Scrolled to community
-        if ($(this).scrollTop() > (boutiqueHeight+storyHeight)+(headerHeight*2) && $(this).scrollTop() < (boutiqueHeight + storyHeight + communityHeight) + (headerHeight * 3) ) {
+        if ($(this).scrollTop() >= (boutiqueHeight+storyHeight)+(headerHeight*2) && $(this).scrollTop() <= (boutiqueHeight + storyHeight + communityHeight) + (headerHeight * 3) ) {
             console.log("Community");
             $("body").removeClass().addClass("bg-pantone-531-u");
         }
         
         // Scrolled to Reach us
-        if ($(this).scrollTop() > (boutiqueHeight + storyHeight + communityHeight) + (headerHeight * 3) && $(this).scrollTop() < (boutiqueHeight + storyHeight + communityHeight + reachUsHeight) + (headerHeight*4) ) {
+        if ($(this).scrollTop() >= (boutiqueHeight + storyHeight + communityHeight) + (headerHeight * 3) && $(this).scrollTop() <= (boutiqueHeight + storyHeight + communityHeight + reachUsHeight) + (headerHeight*4) ) {
             console.log("Entering Reach us section");
             $("body").removeClass().addClass("plain-white");
+            $(".App-menu").removeClass("default");
         }
 
         // Scrolled to ship + return 
-        if ($(this).scrollTop() > (boutiqueHeight + storyHeight + communityHeight + reachUsHeight) + (headerHeight * 4) && $(this).scrollTop() < (boutiqueHeight + storyHeight + communityHeight + reachUsHeight + shipReturnHeight) + (headerHeight*5)) {
+        if ($(this).scrollTop() >= (boutiqueHeight + storyHeight + communityHeight + reachUsHeight) + (headerHeight * 4) && $(this).scrollTop() <= (boutiqueHeight + storyHeight + communityHeight + reachUsHeight + shipReturnHeight) + (headerHeight*5)) {
             $("body").removeClass().addClass("afa-blue");
         }
     });
