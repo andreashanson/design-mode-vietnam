@@ -2,7 +2,7 @@ import React from 'react';
 import './Menu.css';
 
 const Menu = (props) => (
-    <div className="App-menu default">
+    <div className="App-menu">
         <ul>
             <li className="menu-1"><a href="#section-1">BOUTIQUE</a></li>
             <li className="menu-2"><a href="#section-2">STORY</a></li>

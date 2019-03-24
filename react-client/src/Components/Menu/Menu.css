@@ -9,12 +9,36 @@
     text-align: right;
 }
 
-.App-menu.default ul li a:link, a:visited, a:hover, a:active {
+.App-menu ul li a:link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.App-menu ul li a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.App-menu ul li a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.App-menu ul li a:active {
   color: #FFFFFF;
   text-decoration: none;
 }
 
-.test.App-menu ul li a:link, a:visited, a:hover, a:active {
+.App-menu.yellow ul li a:link {
+    color: #FDDA24;
+    text-decoration: none;
+}
+.App-menu.yellow ul li a:visited {
+    color: #FDDA24;
+    text-decoration: none;
+}
+.App-menu.yellow ul li a:hover {
+    color: #FDDA24;
+    text-decoration: none;
+}
+.App-menu.yellow ul li a:active {
     color: #FDDA24;
     text-decoration: none;
 }
