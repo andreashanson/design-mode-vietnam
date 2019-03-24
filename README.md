@@ -15,3 +15,13 @@ $ git push heroku master
 $ git add -A
 $ git commit -m "commit for deploy to heroku"
 $ git push -f heroku
+
+
+### TODO
+Story text
+Picture on Community section
+FB and IG links
+
+Video Page?
+- Video file.
+- Own section on site?

@@ -21,33 +21,33 @@ $(document).ready(function() {
         if ($(this).scrollTop() <= (boutiqueHeight + headerHeight)) {
             console.log("Boutique");
             $("body").removeClass();
-            $(".App-menu").removeClass("yellow");
+            $(".App-menu, .SoMe").removeClass("yellow");
         }
         // Scrolled to Story
         if ($(this).scrollTop() >= (boutiqueHeight+headerHeight) && $(this).scrollTop() <= (boutiqueHeight+storyHeight)+(headerHeight*2) ) {
             console.log("Story");
-            $("body").removeClass().addClass("bg-pantone-2010-c");
-            $(".App-menu").removeClass("yellow");
+            $("body").removeClass().addClass("bg-pantone-9225-u");
+            $(".App-menu, .SoMe").removeClass("yellow");
         }
         
         // Scrolled to community
         if ($(this).scrollTop() >= (boutiqueHeight+storyHeight)+(headerHeight*2) && $(this).scrollTop() <= (boutiqueHeight + storyHeight + communityHeight) + (headerHeight * 3) ) {
             console.log("Community");
             $("body").removeClass().addClass("bg-pantone-531-u");
-            $(".App-menu").removeClass("yellow");
+            $(".App-menu, .SoMe").removeClass("yellow");
         }
         
         // Scrolled to Reach us
         if ($(this).scrollTop() >= (boutiqueHeight + storyHeight + communityHeight) + (headerHeight * 3) && $(this).scrollTop() <= (boutiqueHeight + storyHeight + communityHeight + reachUsHeight) + (headerHeight*4) ) {
             console.log("Entering Reach us section");
             $("body").removeClass().addClass("plain-white");
-            $(".App-menu").addClass("yellow");
+            $(".App-menu, .SoMe").addClass("yellow");
         }
 
         // Scrolled to ship + return 
         if ($(this).scrollTop() >= (boutiqueHeight + storyHeight + communityHeight + reachUsHeight) + (headerHeight * 4) && $(this).scrollTop() <= (boutiqueHeight + storyHeight + communityHeight + reachUsHeight + shipReturnHeight) + (headerHeight*5)) {
             $("body").removeClass().addClass("afa-blue");
-            $(".App-menu").removeClass("yellow");
+            $(".App-menu, .SoMe").removeClass("yellow");
         }
     });
 });

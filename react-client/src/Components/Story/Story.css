@@ -11,6 +11,9 @@
 
 .story-section .logo {
     width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 h1.story-header {

@@ -5,6 +5,8 @@ import Header from './Components/Header';
 import Boutique from './Components/Boutique';
 import Story from './Components/Story';
 import Community from './Components/Community';
+import Reach from './Components/Reach';
+import ShipReturn from './Components/ShipReturn';
 
 class App extends Component {
   render() {
@@ -15,8 +17,8 @@ class App extends Component {
           <Boutique header ="boutique" />
           <Story header="story" />
           <Community header="community" />
-          <section id="section-4" className="main-section"><h1>reach us</h1></section>
-          <section id="section-5" className="main-section"><h1>ship+ return</h1></section>
+          <Reach header="reach us" />
+          <ShipReturn header="ship+ return" />
         </div>
       </div>
     );

@@ -1,0 +1,40 @@
+.SoMe {
+    margin-top: 20px;
+}
+.SoMe a {
+    margin-left: 20px;
+}
+
+.SoMe a:link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.SoMe a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.SoMe a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.SoMe a:active {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.SoMe.yellow a:link {
+    color: #FDDA24;
+    text-decoration: none;
+}
+.SoMe.yellow a:visited {
+    color: #FDDA24;
+    text-decoration: none;
+}
+.SoMe.yellow a:hover {
+    color: #FDDA24;
+    text-decoration: none;
+}
+.SoMe.yellow a:active {
+    color: #FDDA24;
+    text-decoration: none;
+}
