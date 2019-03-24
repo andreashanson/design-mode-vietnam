@@ -1,41 +1,48 @@
 $(document).ready(function() {
 
     let windowHeight = $(window).height();
+    let headerHeight = $("#App-header").height();
+
+    let boutiqueHeight = $("#section-1").height();
+    let storyHeight = $("#section-2").height();
+    let communityHeight = $("#section-3").height();
+    let reachUsHeight = $("#section-4").height();
+    let shipReturnHeight = $("#section-5").height();
+        
     $(".main-section").css({"min-height": windowHeight});
     $(window).scroll(function () {
-        console.log("SCROLL TOP");
-        console.log($(this).scrollTop());
-        console.log("window height");
-        console.log(windowHeight);
-        console.log(windowHeight*2);
+        boutiqueHeight = $("#section-1").height();
+        storyHeight = $("#section-2").height();
+        communityHeight = $("#section-3").height();
+        reachUsHeight = $("#section-4").height();
+        shipReturnHeight = $("#section-5").height();
+        
+        // Scrollled to Boutique
+        if ($(this).scrollTop() < (boutiqueHeight + headerHeight)) {
+            console.log("Boutique");
+            $("body").removeClass();
+        }
+        // Scrolled to Story
+        if ($(this).scrollTop() > (boutiqueHeight+headerHeight) && $(this).scrollTop() < (boutiqueHeight+storyHeight)+(headerHeight*2) ) {
+            console.log("Story");
+            $("body").removeClass().addClass("bg-pantone-2010-c");
+        }
+        
+        // Scrolled to community
+        if ($(this).scrollTop() > (boutiqueHeight+storyHeight)+(headerHeight*2) && $(this).scrollTop() < (boutiqueHeight + storyHeight + communityHeight) + (headerHeight * 3) ) {
+            console.log("Community");
+            $("body").removeClass().addClass("bg-pantone-531-u");
+        }
+        
+        // Scrolled to Reach us
+        if ($(this).scrollTop() > (boutiqueHeight + storyHeight + communityHeight) + (headerHeight * 3) && $(this).scrollTop() < (boutiqueHeight + storyHeight + communityHeight + reachUsHeight) + (headerHeight*4) ) {
+            console.log("Entering Reach us section");
+            $("body").removeClass().addClass("plain-white");
+        }
 
-        if ($(this).scrollTop() >= (windowHeight+200)) {
-            $("body").addClass("bg-pantone-2010-c");
-        }
-        else if ($(this).scrollTop() <= (windowHeight+200)) {
-            $("body").removeClass("bg-pantone-2010-c");
-        }
-        if ($(this).scrollTop() >= (windowHeight*2)+200*2 ) {
-            $("body").addClass("bg-pantone-531-u").removeClass("bg-pantone-2010-c");
-        }
-        else if ($(this).scrollTop() <= (windowHeight*2) + 200*2) {
-            $("body").removeClass("bg-pantone-531-u");
-        }
-
-        if ($(this).scrollTop() >= (windowHeight*3)+200*3 ) {
-            $("body").addClass("plain-white").removeClass("bg-pantone-531-u");
-            $(".App-menu").addClass("font-pantone-115-c").removeClass("default");
-        }
-        else if ($(this).scrollTop() <= (windowHeight * 3) + 200*3) {
-            $("body").removeClass("plain-white");
-            $(".App-menu").addClass("default").removeClass("font-pantone-115-c");
-        }
-        if ($(this).scrollTop() >= (windowHeight * 4) + 200 * 4) {
-            $("body").addClass("afa-blue").removeClass("plain-white");
-            $(".App-menu").addClass("default").removeClass("font-pantone-115-c");
-        }
-        else if ($(this).scrollTop() <= (windowHeight * 4) + 200 * 4) {
-            $("body").removeClass("afa-blue");
+        // Scrolled to ship + return 
+        if ($(this).scrollTop() > (boutiqueHeight + storyHeight + communityHeight + reachUsHeight) + (headerHeight * 4) && $(this).scrollTop() < (boutiqueHeight + storyHeight + communityHeight + reachUsHeight + shipReturnHeight) + (headerHeight*5)) {
+            $("body").removeClass().addClass("afa-blue");
         }
     });
 });
