@@ -9,10 +9,20 @@ const Boutique = (props) => (
     <section id="section-1" className="main-section">
         <h1 className="boutique-header">{props.header}</h1>
         <div className="boutique-section">
-            <div><img src={Photo7} alt="vest1" /></div>
-            <div><img src={Photo} alt="vest2" /></div>
             <div>
-                <img src={Photo17} alt="vest1" />
+                <a href="https://en-west.myshopify.com/collections/all" target="_blank">
+                    <img src={Photo7} alt="vest1" />
+                </a>
+            </div>
+            <div>
+                <a href="https://en-west.myshopify.com/products/pink-crane" target="_blank">
+                    <img src={Photo} alt="vest2" />
+                </a>
+            </div>
+            <div>
+                <a href="https://en-west.myshopify.com/products/yellow-peacock" target="_blank">    
+                    <img src={Photo17} alt="vest3" />
+                </a>
                 <div className="logo"><img src={WhiteLogo} alt="Logo" /></div>
             </div>
         </div>

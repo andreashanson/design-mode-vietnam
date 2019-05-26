@@ -2,3 +2,13 @@ h1.reach-header {
     color: #FDDA24;
     color: rgba(253, 218, 36, 1);
 }
+
+section.reach-section {
+    padding-left: 30px;
+    color: #FDDA24;
+    color: rgba(253, 218, 36, 1);
+}
+
+section.reach-section p.contact {
+    color: #2e0afa;
+} 

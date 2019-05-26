@@ -18,7 +18,7 @@ class App extends Component {
           <Story header="story" />
           <Community header="community" />
           <Reach header="reach us" />
-          <ShipReturn header="ship+ return" />
+          <ShipReturn header="ship+ return" header2="Exchanges" />
         </div>
       </div>
     );

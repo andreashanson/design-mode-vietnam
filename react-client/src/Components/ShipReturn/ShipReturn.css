@@ -2,3 +2,14 @@ h1.ship-return-header {
     color: #1D6E2F;
     color: rgba(29, 110, 47, 1);
 }
+
+section.shipping-section {
+    padding-left: 30px;
+    width: 60%;
+    color: rgba(29, 110, 47, 1);
+}
+@media screen and (max-width: 768px) {
+    section.shipping-section {
+        width: 90%;
+    }
+}

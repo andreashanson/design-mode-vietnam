@@ -19,6 +19,7 @@ html, body,  #root, .App {
 
 .main-section {
   padding-top: 200px;
+  font-size: 20px;
 }
 
 .js-color-stop {

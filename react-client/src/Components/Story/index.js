@@ -7,10 +7,18 @@ const Story = (props) => (
         <h1 className="story-header">{props.header}</h1>
         <section className="story-section">
             <section className="text">
-                <p>From its medieval origins to the digital era, learn everything there is to know about the ubiquitous lorem ipsum passage.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>From its medieval origins to the digital era, learn everything there is to know about the ubiquitous lorem ipsum passage.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>
+                    Does it actually sound believable, when we tell you, that a shiny yellow vest with storks on,
+                    fertilized from our creativity and born from a tailor in Hoi An, is the most effective conversation-
+                    starter we’ve experienced? Well it is. That’s why ÉNWEST was born; to create more items that
+
+                    makes people feel majestic yet playful. We aim to create items that encourage interactions
+                    and curiosity. We aim to uplift the human interaction positively and our medium is items that
+                    stand out and spreads joy. Through our vests, we encourage that women take their space and
+                    celebrate their uniqueness because we believe that this act will equally make room for other
+                    women to do exactly the same.
+                    “Women taking space and making room”
+                </p>
             </section>
             <section className="logo"><img src={WhiteLogo} alt="Logo" /></section>
         </section>
